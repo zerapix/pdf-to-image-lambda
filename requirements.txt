@@ -1,3 +1,4 @@
 chalice
 pdf2image
 boto3
+poppler-utils
