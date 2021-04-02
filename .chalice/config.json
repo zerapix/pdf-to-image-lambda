@@ -12,7 +12,7 @@
   "environment_variables": {
     "ORIGIN_BUCKET": "ztextract",
     "DESTINATION_BUCKET": "ztextract",
-    "FMT": "jpeg",
+    "FMT": "png",
     "DPI": "300"
   }
 }

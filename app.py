@@ -19,7 +19,7 @@ else:
     logging.info(f"No DPI environment variable set.  Using the default: DPI=300")
 
 _SUPPORTED_IMAGE_EXTENSIONS = ["ppm", "jpeg", "png", "tiff"]
-FMT = "jpeg"
+FMT = "png"
 if 'FMT' in os.environ:
     environ_fmt = str(os.environ['FMT'])
     if environ_fmt in _SUPPORTED_IMAGE_EXTENSIONS:
@@ -29,7 +29,7 @@ if 'FMT' in os.environ:
                       f"Only the following formats are supported: {','.join(_SUPPORTED_IMAGE_EXTENSIONS)}.  "
                       f"Using the default: FMI='png'")
 else:
-    logging.info(f"No FMT environment variable set.  Using the default: FMT='jpeg'")
+    logging.info(f"No FMT environment variable set.  Using the default: FMT='png'")
 
 DESTINATION_BUCKET = None
 if 'DESTINATION_BUCKET' in os.environ:
